@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.2;
+  background: #004ec2;
+}
+
+#wrapper {
+  height: 100vh;
+  background: #004ec2;
+  animation-name: background-change;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-change {
+  0% {
+    background: #004ec2;
+  }
+  50% {
+    background: rgb(94, 169, 255);
+  }
+  100% {
+    background: #004ec2;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  background: #333333;
+
+  color: white;
+}
+
+.left {
+  margin-left: 20px;
+}
+
+.nav .left-text-2 {
+  margin: 0px;
+  font-size: 14px;
+}
+
+.nav .left-text-1 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+.right {
+  margin-right: 20px;
+}
+
+.right .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.right li {
+  margin: 0px 6px;
+  font-size: 15px;
+  color: white;
+  list-style: none;
+  transition: 0.5s;
+}
+
+.right li:hover {
+  color: rgb(94, 169, 255);
+  transition: 0.5s;
+}
+
+.right a:hover {
+  text-decoration: none;
+}
+
+.main {
+  height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.main .header {
+  font-size: 39px;
+}
+
+.main .intro-text {
+  font-size: 17px;
+}
+
+.main .buttons {
+  display: flex;
+}
+
+.main .call-to-action-btn {
+  padding: 8px 20px;
+  color: black;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin: 0px 40px;
+  text-decoration: none;
+  background: #ffffff;
+  transition: 0.5s;
+}
+
+.main .call-to-action-btn:hover {
+  color: white;
+  border: 1px solid rgb(0, 240, 108);
+  background: rgb(0, 240, 108);
+  transition: 0.5s;
+}
+
+footer{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background: black;
+  color: white;
+}
+
+@media (max-width: 960px){
+  .right {
+   display: none;
+  }
+  footer{
+    text-align: left;
+  }
+}
